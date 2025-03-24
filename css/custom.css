@@ -1,0 +1,104 @@
+/* custom.css */
+body {
+    background: linear-gradient(135deg, #0d0d1f 0%, #1a1a3d 100%);
+    color: #ff0000;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+#contenido {
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(10, 10, 30, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+h1, h2 {
+    color: #00ffff;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+    letter-spacing: 2px;
+}
+
+label {
+    color: #009dff;
+    font-size: 1.2rem;
+}
+
+input, textarea {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #00ffff;
+    color: #000000;
+    border-radius: 5px;
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.button-primary {
+    background: #00ffff;
+    color: #0d0d1f;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.button-primary:hover {
+    background: #00cccc;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+#lista-tweets {
+    margin-top: 20px;
+}
+
+#lista-tweets li {
+    background: rgba(20, 20, 50, 0.9);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+#lista-tweets li:hover {
+    transform: scale(1.02);
+}
+
+.borrar-tweet {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ff5555;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 0 5px rgba(255, 85, 85, 0.7);
+}
+
+.editar-tweet {
+    position: absolute;
+    top: 10px;
+    right: 40px; /* Separado del botón "X" */
+    color: #00ffff;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.7);
+}
+
+.error {
+    background: #ff5555;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(255, 85, 85, 0.5);
+}
